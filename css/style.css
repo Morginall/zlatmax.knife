@@ -5135,7 +5135,7 @@ body::after {
   }
 
   .main-product:not(:last-child) {
-    margin-bottom: 2.125rem;
+    margin-bottom: 1.375rem;
   }
 
   .main-product__images {
@@ -5147,7 +5147,7 @@ body::after {
   }
 
   .info-product {
-    padding-bottom: 0.625rem;
+    padding-bottom: 1.25rem;
   }
 
   .info-product {
@@ -5739,15 +5739,12 @@ body::after {
   }
 
   .actions-product__btns {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 0.9375rem;
-    height: 7.1875rem;
+    height: auto;
+    display: block;
+  }
+
+  .actions-product__cart:not(:last-child) {
+    margin-bottom: 0.9375rem;
   }
 
   .header-actions-product {
@@ -6860,15 +6857,15 @@ body::after {
     }
 }
 
-@supports (margin-bottom: clamp( 2.125rem , 0.8120229008rem  +  6.5648854962vw , 7.5rem )) {
+@supports (margin-bottom: clamp( 1.375rem , -0.1211832061rem  +  7.4809160305vw , 7.5rem )) {
     .main-product:not(:last-child) {
-      margin-bottom: clamp( 2.125rem , 0.8120229008rem  +  6.5648854962vw , 7.5rem );
+      margin-bottom: clamp( 1.375rem , -0.1211832061rem  +  7.4809160305vw , 7.5rem );
     }
 }
 
-@supports not (margin-bottom: clamp( 2.125rem , 0.8120229008rem  +  6.5648854962vw , 7.5rem )) {
+@supports not (margin-bottom: clamp( 1.375rem , -0.1211832061rem  +  7.4809160305vw , 7.5rem )) {
     .main-product:not(:last-child) {
-      margin-bottom: calc(2.125rem + 5.375 * (100vw - 20rem) / 81.875);
+      margin-bottom: calc(1.375rem + 6.125 * (100vw - 20rem) / 81.875);
     }
 }
 
@@ -6896,15 +6893,15 @@ body::after {
     }
 }
 
-@supports (padding-bottom: clamp( 0.625rem , 0.3196564885rem  +  1.5267175573vw , 1.875rem )) {
+@supports (padding-bottom: clamp( 1.25rem , 1.0973282443rem  +  0.7633587786vw , 1.875rem )) {
     .info-product {
-      padding-bottom: clamp( 0.625rem , 0.3196564885rem  +  1.5267175573vw , 1.875rem );
+      padding-bottom: clamp( 1.25rem , 1.0973282443rem  +  0.7633587786vw , 1.875rem );
     }
 }
 
-@supports not (padding-bottom: clamp( 0.625rem , 0.3196564885rem  +  1.5267175573vw , 1.875rem )) {
+@supports not (padding-bottom: clamp( 1.25rem , 1.0973282443rem  +  0.7633587786vw , 1.875rem )) {
     .info-product {
-      padding-bottom: calc(0.625rem + 1.25 * (100vw - 20rem) / 81.875);
+      padding-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 81.875);
     }
 }
 
