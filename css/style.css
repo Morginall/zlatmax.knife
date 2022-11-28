@@ -5739,7 +5739,9 @@ body::after {
   }
 
   .actions-product__btns {
-    height: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     display: block;
   }
 
